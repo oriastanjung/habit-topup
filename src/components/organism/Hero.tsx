@@ -6,7 +6,7 @@ interface HeroProps {}
 const Hero: FC<HeroProps> = ({}) => {
   return (
     <>
-      <section className="w-full flex  items-center justify-center absolute top-52 md:top-5 z-[2]">
+      <section className="w-full flex  items-center justify-center absolute top-60 md:top-5 z-[2]">
         <Image
           width={517}
           height={776}
@@ -15,7 +15,7 @@ const Hero: FC<HeroProps> = ({}) => {
           alt="habit-hero"
         />
       </section>
-      <section className="w-full flex  items-center justify-center absolute top-[32rem] md:top-96  z-[1]">
+      <section className="w-full md:flex  items-center justify-center absolute top-[32rem] md:top-96  z-[1]">
         <Image
           width={886}
           height={305}

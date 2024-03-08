@@ -13,7 +13,7 @@ export default function Home() {
         <TextSpan className="text-5xl ml-10">day to win</TextSpan>
       </section>
       <Hero />
-      <section className="absolute top-96 md:top-auto right-0 z-[20] md:z-[0]">
+      <section className="absolute top-[28rem] md:top-auto right-0 z-[20] md:z-[0]">
         <Card className="px-4 md:px-8 2xl:px-12 h-[20rem] md:h-96 2xl:h-[40rem] 2xl:w-[23rem] flex flex-col items-start justify-center">
           <div>
             <h2 className="flex items-center gap-1 font-sf-ui-medium text-3xl">
@@ -63,7 +63,7 @@ export default function Home() {
           </div>
         </Card>
       </section>
-      <section className="absolute top-[42.5rem] md:left-auto left-40 md:top-[40rem] w-full flex md:justify-center z-[30]">
+      <section className="absolute top-48 md:left-auto left-28 md:top-[40rem] md:w-full flex md:justify-center z-[30]">
         <Button className="flex items-center">Top-Up Now <GoChevronRight /></Button>
       </section>
     </main>

@@ -4,7 +4,7 @@ interface FooterProps {}
 
 const Footer: FC<FooterProps> = ({}) => {
   return (
-    <footer className="absolute font-sf-ui-thin z-30 bottom-0 md:right-0 flex w-full flex-col text-[9px] md:text-sm">
+    <footer className="overflow-hidden absolute font-sf-ui-thin md:font-sf-ui-medium  z-30 bottom-0 md:right-0 flex md:w-full flex-col text-[9px] md:text-sm justify-start md:items-end">
       Design Reference IG : @uxui_howard.le
       <span>Build by O. Riastanjung using NextJS</span>
     </footer>
