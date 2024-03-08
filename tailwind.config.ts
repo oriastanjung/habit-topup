@@ -8,11 +8,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily : {
+        'sf-ui' : ['SF UI Display Light', 'sans-serif'],
+        'sf-ui-bold' : ['SF UI Display Bold', 'sans-serif'],
+        'sf-ui-black' : ['SF UI Display Black', 'sans-serif'],
+        'sf-ui-heavy' : ['SF UI Display Heavy', 'sans-serif'],
+        'sf-ui-semibold' : ['SF UI Display Semibold', 'sans-serif'],
+        'sf-ui-medium' : ['SF UI Display Medium', 'sans-serif'],
+        'sf-ui-thin' : ['SF UI Display Thin', 'sans-serif'],
+        'sf-ui-ultralight' : ['SF UI Display Ultralight', 'sans-serif'],
+
       },
+      colors : {
+        "black" : "#080A1E"
+      }
     },
   },
   plugins: [],

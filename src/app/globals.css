@@ -2,32 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+@font-face {
+    font-family: 'SF UI Display Black';
+    font-weight: 800;
+    src: url('/fonts/sf-ui-display-black.otf') format('opentype');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+    font-family: 'SF UI Display Bold';
+    font-weight: 700;
+    src: url('/fonts/sf-ui-display-bold.otf') format('opentype');
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+    font-family: 'SF UI Display Heavy';
+    font-weight: 900;
+    src: url('/fonts/sf-ui-display-heavy.otf') format('opentype');
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@font-face {
+    font-family: 'SF UI Display Light';
+    font-weight: 400;
+    src: url('/fonts/sf-ui-display-light.otf') format('opentype');
+}
+@font-face {
+    font-family: 'SF UI Display Medium';
+    font-weight: 500;
+    src: url('/fonts/sf-ui-display-medium.otf') format('opentype');
+}
+@font-face {
+    font-family: 'SF UI Display Semibold';
+    font-weight: 600;
+    src: url('/fonts/sf-ui-display-semibold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'SF UI Display Thin';
+    font-weight: 200;
+    src: url('/fonts/sf-ui-display-thin.otf') format('opentype');
+}
+@font-face {
+    font-family: 'SF UI Display Ultralight';
+    font-weight: 300;
+    src: url('/fonts/sf-ui-display-ultralight.otf') format('opentype');
 }
