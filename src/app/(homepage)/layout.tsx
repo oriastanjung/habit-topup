@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-sf-ui-medium container mx-auto px-4 relative top-0 text-black md:max-h-screen min-h-screen md:overflow-hidden">
+      <body className="font-sf-ui-medium container mx-auto px-4 relative top-0 text-black ">
         <Navbar />
         {children}
         <Footer/>

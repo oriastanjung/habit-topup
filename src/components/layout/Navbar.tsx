@@ -6,33 +6,42 @@ import IconHome from "@/assets/iconHome";
 import IconNote from "@/assets/iconNote";
 import IconGallery from "@/assets/iconGallery";
 import IconBook from "@/assets/iconBook";
+import { IoGameControllerOutline } from "react-icons/io5";
+import Link from "next/link";
 interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = ({}) => {
   return (
     <header className="container mx-auto py-11">
       <nav className="flex w-full items-center justify-between">
-        <h1 className="cursor-pointer" aria-label="HABIT">
-          <Image
-            width={48}
-            height={43}
-            quality={100}
-            alt="HABIT-Logo"
-            src={"/logo.png"}
-          />
-        </h1>
+        <Link href={"/"}>
+          <h1 className="cursor-pointer" aria-label="HABIT">
+            <Image
+              width={48}
+              height={43}
+              quality={100}
+              alt="HABIT-Logo"
+              src={"/logo.png"}
+            />
+          </h1>
+        </Link>
         <ul className="flex items-center gap-4">
           <li>
-            <NavigationItem isActive>
-              <IconHome className="w-16 h-16" />
-            </NavigationItem>
+            <Link href={'/'}>
+              <NavigationItem isActive>
+                <IconHome className="w-16 h-16" />
+              </NavigationItem>
+            </Link>
           </li>
           <li>
-            <NavigationItem>
-              <IconNote className="w-16 h-16" />
-            </NavigationItem>
+            <Link href={"/topup"}>
+              <NavigationItem>
+                {/* <IconNote className="w-16 h-16" /> */}
+                <IoGameControllerOutline className="w-16 h-16 text-slate-300" />
+              </NavigationItem>
+            </Link>
           </li>
-          <li>
+          {/* <li>
             <NavigationItem>
               <IconGallery className="w-16 h-16" />
             </NavigationItem>
@@ -41,7 +50,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
             <NavigationItem>
               <IconBook className="w-16 h-16" />
             </NavigationItem>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>

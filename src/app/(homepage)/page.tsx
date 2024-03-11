@@ -1,7 +1,8 @@
 import Hero from "@/components/organism/Hero";
-import Button from "@/components/ui/Button";
+import { Button } from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import TextSpan from "@/components/ui/TextSpan";
+import Link from "next/link";
 import { FaCheck } from "react-icons/fa6";
 import { GoChevronRight } from "react-icons/go";
 export default function Home() {
@@ -47,15 +48,11 @@ export default function Home() {
               </TextSpan>
             </div>
             <div className="flex">
-              <TextSpan
-                className="px-2 py-3 flex font-sf-ui text-xs items-center gap-1 w-1/2 text-center"
-              >
+              <TextSpan className="px-2 py-3 flex font-sf-ui text-xs items-center gap-1 w-1/2 text-center">
                 <FaCheck className="text-black text-[9px]" />
                 Fast Progress
               </TextSpan>
-              <TextSpan
-                className="px-2 py-3 flex font-sf-ui text-xs items-center gap-1 w-1/2 text-center"
-              >
+              <TextSpan className="px-2 py-3 flex font-sf-ui text-xs items-center gap-1 w-1/2 text-center">
                 <FaCheck className="text-black text-[9px]" />
                 Only Few Clicks
               </TextSpan>
@@ -64,7 +61,11 @@ export default function Home() {
         </Card>
       </section>
       <section className="absolute top-48 md:left-auto left-28 md:top-[40rem] md:w-full flex md:justify-center z-[30]">
-        <Button className="flex items-center">Top-Up Now <GoChevronRight /></Button>
+        <Link href="/topup">
+          <Button className="flex items-center">
+            Top-Up Now <GoChevronRight />
+          </Button>
+        </Link>
       </section>
     </main>
   );
